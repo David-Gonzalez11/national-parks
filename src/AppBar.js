@@ -10,7 +10,7 @@ import TextField from "@mui/material/TextField"
 export default function ButtonAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" style={{ backgroundColor: "black" }}>
+      <AppBar position="static" style={{ backgroundColor: "black", width: "100%" }}>
         <Toolbar>
           <IconButton
             size="large"
@@ -22,7 +22,7 @@ export default function ButtonAppBar() {
           >
             <MenuIcon />
           </IconButton>
-          <img src="https://www.researchgate.net/publication/320011942/figure/fig1/AS:586733053837312@1516899469104/Redesigned-National-Park-Service-logo.png" />
+          <img src="https://www.researchgate.net/publication/320011942/figure/fig1/AS:586733053837312@1516899469104/Redesigned-National-Park-Service-logo.png" className="nps-img"/>
 
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             National Park Service
