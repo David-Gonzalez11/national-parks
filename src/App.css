@@ -19,8 +19,8 @@ width:100%;
 }
 
 .search-for-park{
-  height: ;
-  background-color: black;
+  display: flex;
+ background-color: black;
   color: white;
   margin:none;
 }
@@ -31,4 +31,8 @@ h3{
 .arrow-drop-down{
 
  display: flex;
+}
+
+.width-50{
+  width: 50%;
 }
