@@ -1,38 +1,57 @@
-
 .container {
   width: 100vw;
   height: 100vh;
   /* vh stands for viewport height, which takes up the full height of the viewport */
   display: flex;
-
 }
 
-.nps-img{
+.nps-img {
   border-radius: 50%;
   width: 50px;
   margin-right: 10px;
 }
 
-.hero-img{
-height: 400px;
-width:100%;
+.hero-img {
+  height: 500px;
+  width: 100%;
 }
 
-.search-for-park{
+.search-for-park {
   display: flex;
- background-color: black;
+  background-color: black;
   color: white;
-  margin:none;
+  margin: none;
+  position: relative;
+  bottom: 40px;
+  width: 90%;
+  margin: 0px 20px 0  60px;
+  background-color: black;
 }
 
-h3{
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.arrow-drop-down{
-
- display: flex;
+.arrow-drop-down {
+  display: flex;
 }
 
-.width-50{
+.width-50 {
   width: 50%;
+}
+.overlay {
+  color: white;
+  background: linear-gradient(transparent, rgb(0, 0, 0));
+  position: absolute;
+  top: 12rem;
+  left: 60rem;
+  bottom: 30rem;
+  width: 35.5%;
+  height: 30.6%;
+  padding-left: 40px;
+}
+.overlay-button {
+  border-radius: 5px;
+  padding: 8px;
+  border:"none";
 }
