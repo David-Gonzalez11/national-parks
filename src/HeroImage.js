@@ -10,14 +10,10 @@ const HeroImage = () => {
       />
       <div className="overlay">
         <p>
-          <strong>
-            <h3>Asian American & Pacific Islander Month</h3>
-          </strong>
+            <h3 className="hero-text">Asian American & Pacific Islander Month</h3>
         </p>
         <p>
-          <strong>
-            <h3>Sharing Heritage & history</h3>
-          </strong>
+            <h1 className="hero-text">Sharing Heritage & history</h1>
         </p>
         <button className="overlay-button">Find Stories & Places</button>
       </div>

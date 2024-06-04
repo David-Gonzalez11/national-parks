@@ -24,8 +24,8 @@
   position: relative;
   bottom: 40px;
   width: 90%;
-  margin: 0px 20px 0  60px;
-  background-color: black;
+  margin: 0px 20px 0 60px;
+  padding: 20px 10px 20px 10px;
 }
 
 h3 {
@@ -44,14 +44,102 @@ h3 {
   background: linear-gradient(transparent, rgb(0, 0, 0));
   position: absolute;
   top: 12rem;
-  left: 60rem;
+  left: 20rem;
   bottom: 30rem;
   width: 35.5%;
   height: 30.6%;
   padding-left: 40px;
 }
 .overlay-button {
+  border-radius: 8px;
+  padding: 10px;
+  border: "none";
+}
+
+.hero-text {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 2;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.featured-stories-img {
+  width: 33%;
+}
+.stories-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.story-card {
+  height: 500px;
+  flex: 1 1 calc(33.333% - 20px);
+  /* 3 cards per row with 20px gap */
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.featured-stories-img {
+  width: 300px;
+  height: 350px;
+  display: block;
+  margin: 0 auto 10px;
+}
+.story-description {
+  font-size: 12px;
+  padding-top: none;
+  margin-top: 0;
+}
+h4 {
+  padding: none;
+  margin-bottom: none;
+}
+.story-title {
+  margin-bottom: 5px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+}
+.first,
+.second,
+.third {
+  width: 200px;
+  height: 30px;
+  background-color: rgba(75, 94, 39);
+  font-weight: bold;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* Added transparency */
+  padding: 30px;
+  border: 2px solid white;
   border-radius: 5px;
-  padding: 8px;
-  border:"none";
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 15px;
+  border-radius: 7px;
+}
+
+.icons {
+  font-size: "80px";
+      border-radius: "50%";
+      padding: "10px";
+      display: "inline-flex";
+      align-items: "center";
+      justify-content: "center";
+      color: black;
+      margin-left: 10px;
+      position: relative;
+      left: 2.5rem;
+      top: 2rem;
 }
