@@ -27,12 +27,15 @@ const SearchParks = () => {
       "https://developer.nps.gov/api/v1/parks?&start=2&api_key=ACTtwg9kV0YavegYOa6xKy3ATw2aYmnjdEnOEf6j"
     )
     const data = await response.json()
-    const topics = data.data.flatMap((park) =>
-      park.topics.map((topic) => topic.name)
+     const topics = data.data.flatMap((park) =>
+      park.topics.map((topic) => ({
+        name: topic.name,
+        url: park.url, // Store the park URL associated with the topic
+      }))
     )
 
     // console.log("topicData", data.data[0].topics)
-    setTopicData([...new Set(topics)]) // Remove duplicates
+    setTopicData([...new Set(topics.map(t => JSON.stringify(t)))].map(t => JSON.parse(t))) // Remove duplicates
     return topicData
   }
   useEffect(() => {
@@ -50,10 +53,14 @@ const SearchParks = () => {
   }
 
   const handleTopicChange = (event) => {
+
     setSelectedTopic(event.target.value)
-
-
-
+const selectedTopic = topicData.find(
+      (topic) => topic.name === event.target.value
+    )
+    if (selectedTopic) {
+      window.location.href = selectedTopic.url
+    }
   }
   return (
     <>
@@ -87,7 +94,7 @@ const SearchParks = () => {
         </div>
         <div className="width-50">
           <h3 style={{ marginTop: "0", marginLeft: "35px" }}>
-            Explore America's Story{" "}
+            Explore America's Story
           </h3>
 
           <FormControl fullWidth>
@@ -103,8 +110,8 @@ const SearchParks = () => {
             >
               {topicData &&
                 topicData.map((topic, index) => (
-                  <MenuItem key={index} value={topic}>
-                    <a href={topic.url}>{topic}</a>
+                  <MenuItem key={index} value={topic.name}>
+                    <a href={topic.url}>{topic.name}</a>
                   </MenuItem>
                 ))}
             </Select>

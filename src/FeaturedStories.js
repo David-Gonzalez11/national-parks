@@ -21,7 +21,10 @@ const FeaturedStories = () => {
   }, []) // Empty de
   return (
     <div>
-      <h3>Featured Stories</h3>
+      <div  className="featuredStories-text">
+      <h3 >Featured Stories</h3>
+
+      </div>
       <div className="stories-container">
         {getStories.map((story, index) => (
           <div key={index} className="story-card">

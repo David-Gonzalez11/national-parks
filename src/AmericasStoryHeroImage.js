@@ -16,16 +16,16 @@ const AmericasStoryHeroImage = () => {
         <div className="row">
           <div className="first">
             PLAN YOUR VISIT
-              <ExploreIcon className="icons" sx={{ fontSize: '50px', color: 'black', border: '2px solid white', borderRadius: '50%', padding: '10px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}/>
+              <ExploreIcon className="icons" sx={{ fontSize: '50px', color: 'black', border: '', borderRadius: '50%', padding: '10px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}/>
           </div>
           <div className="second">
             LEARN & EXPLORE
-              <HikingIcon className="icons" sx={{ fontSize: '50px', color: 'transparent', border: '2px solid white', borderRadius: '50%', padding: '10px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}/>
+              <HikingIcon className="icons" sx={{ fontSize: '50px', color: 'black', border: '', borderRadius: '50%', padding: '10px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}/>
           </div>
 
           <div className="third">
             GET INVOLVED
-              <HandshakeIcon className="icons" sx={{ fontSize: '50px', color: 'transparent', border: '2px solid white', borderRadius: '50%', padding: '10px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}/>
+              <HandshakeIcon className="icons" sx={{ fontSize: '50px', color: 'black', border: '', borderRadius: '50%', padding: '10px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}/>
           </div>
         </div>
         <img
