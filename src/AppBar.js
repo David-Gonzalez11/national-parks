@@ -26,7 +26,7 @@ export default function ButtonAppBar() {
           </Typography>
           <SearchIcon style={{ color: "white" }} />
 
-          <TextField
+          {/* <TextField
             className="sesrch-text"
             variant="outlined"
             label="Search"
@@ -38,9 +38,9 @@ export default function ButtonAppBar() {
             sx={{ label: { color: "white" } }}
           >
             Search
-          </TextField>
+          </TextField> */}
 
-          <Button color="inherit">
+          {/* <Button color="inherit">
             <IconButton
               size="large"
               edge="start"
@@ -51,7 +51,7 @@ export default function ButtonAppBar() {
               <MenuIcon />
             </IconButton>
             Menu
-          </Button>
+          </Button> */}
         </Toolbar>
       </AppBar>
     </Box>
